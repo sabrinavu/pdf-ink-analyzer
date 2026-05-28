@@ -23,8 +23,8 @@ DEBUG = True
 raw_hosts = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1')
 ALLOWED_HOSTS = [host.strip() for host in raw_hosts.split(',') if host.strip()]
 
-if 'sabrinavu.dev' not in ALLOWED_HOSTS:
-    ALLOWED_HOSTS.append('sabrinavu.dev')
+if 'pdf-ink-analyzer-production.up.railway.app' not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append('pdf-ink-analyzer-production.up.railway.app')
 
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
