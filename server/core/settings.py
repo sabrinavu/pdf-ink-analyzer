@@ -23,8 +23,8 @@ DEBUG = True
 raw_hosts = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1')
 ALLOWED_HOSTS = [host.strip() for host in raw_hosts.split(',') if host.strip()]
 
-if 'pdf-ink-analyzer-production.up.railway.app' not in ALLOWED_HOSTS:
-    ALLOWED_HOSTS.append('pdf-ink-analyzer-production.up.railway.app')
+if 'sabrinavu.dev' not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append('sabrinavu.dev')
 
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -126,4 +126,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "https://portfolio-beige-nine-u3honwcq80.vercel.app",
     "https://portfolio-qib9in4gh-sabrina-vu-s-projects.vercel.app",
+    "https://sabrinavu.dev",
 ]
