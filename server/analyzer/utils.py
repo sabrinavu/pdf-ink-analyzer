@@ -23,8 +23,11 @@ def analyze_pdf_ink(pdf_path):
     
     total_pixels = poster.shape[0] * poster.shape[1]
 
-    white_rgb = np.array([255,255,255])
-    white_mask = cv2.inRange(image, white_rgb, white_rgb) # runs much faster than checking rgb value against white_rgb
+    # white_rgb = np.array([255,255,255])
+    # white_mask = cv2.inRange(poster, white_rgb, white_rgb) # runs much faster than checking rgb value against white_rgb
+    white_lower = np.array([255, 255, 255], dtype=np.uint8)
+    white_upper = np.array([255, 255, 255], dtype=np.uint8)
+    white_mask = cv2.inRange(poster, white_lower, white_upper)
 
     white_pixels = cv2.countNonZero(white_mask)
 
