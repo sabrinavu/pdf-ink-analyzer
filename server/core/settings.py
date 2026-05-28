@@ -123,6 +123,6 @@ STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://portfolio-beige-nine-u3honwcq80.vercel.app/",
+    "https://portfolio-beige-nine-u3honwcq80.vercel.app",
     "https://portfolio-qib9in4gh-sabrina-vu-s-projects.vercel.app",
 ]
