@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-u*yk*v8&5i^+cvdq4spsut(n#lswh!##!36)*=dn(cfmib6t#l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'pdf-ink-analyzer-production.up.railway.app',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
